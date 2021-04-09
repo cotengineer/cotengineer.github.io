@@ -1,0 +1,198 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: Verdana, sans-serif;
+}
+#container {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#2c3b47;
+	padding: 12px;
+	text-align:center;
+}
+#body {
+	padding:10px;
+	padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background-color:#66ccff;
+}
+
+/*Header--------------------------------------------------------------------------*/
+#header h1 {
+	color:white;
+	border:2px 5px solid black ;"
+}
+
+#header h3 {
+	color: white;
+}
+
+#header img {
+	background-color:white;
+}
+
+#header p {
+	color:white;
+}
+/*Body ----------------------------------------------------------------------------*/
+* {box-sizing: border-box}
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {display: none}
+img {
+	vertical-align: middle;
+	height: 400px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 500px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	color: white/*#f2f2f2*/;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	background-color:rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext, .numbertext2, .numbertext3, .numbertext4 {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot2, .dot3, .dot4 {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover {
+	background-color: black/*#717171*/;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#body h2 {
+	color:#2c3b47;
+	text-align: center;
+	border-bottom: 2px solid #2c3b47;
+}
+
+#body h3, h4 {
+	color: #2c3b47;
+	text-align: center;
+}
+
+#body p {
+	color: #2c3b47;
+}
+
+/**********************************************************/
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+	width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+	width: 40%;
+}
+
+/* Clear floats after the columns */
+.rows:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+	.column.side, .column.middle {
+		width: 100%;
+	}
+}
+
+
+/*-------------------------------FOOTER-----------------------------------------*/
+#footer a, p {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
