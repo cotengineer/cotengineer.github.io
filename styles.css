@@ -203,6 +203,10 @@ html, body {
   #topbar {
   	height:200px;
   }
+
+  #listForm {
+      font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
