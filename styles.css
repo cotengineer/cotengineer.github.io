@@ -1,0 +1,309 @@
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background-color: lightgray;
+}
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+@font-face {
+	font-family: 'HTDJ';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/HTDJ.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'LEDBOARD';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/LEDBOARD.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'ball';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/ball.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'arfmoochikncheez';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/arfmoochikncheez.woff) format('woff');
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#header {
+   background-image: linear-gradient(#6cf, rgba(0,0,255,0.5));
+   padding:1px;
+}
+
+#body {
+   padding-bottom:500px;   /* Height of the footer */
+     background-image: url('images/sky.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:500px;   /* Height of the footer */
+   background: black;
+   border-top: solid black 2px;
+}
+
+@media (max-width: 800px) {
+	#test {
+		display: none;
+	}
+}
+
+/*Title*/
+#title {
+	font-family:arfmoochikncheez;
+	font-size:50px;
+	text-align:right;
+	color:black;"
+	background-color:white;
+}
+
+#subtitle {
+	font-family:HTDJ;
+	font-size:35px;
+	text-align:center;
+	
+	/*height:150px;*/
+	background-color: black;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	color:white;
+}
+
+#subsubtitle{
+	background-color:white;
+	border:solid black 1px;
+	padding:10px;
+	font-size:16px;
+	border-radius:12px;
+	margin: 0px 15px 10px 15px;
+}
+
+#title2 {
+	font-family:arfmoochikncheez;
+	font-size:35px;
+	text-align:center;
+}
+
+#title1 {
+	font-family:arfmoochikncheez;
+	font-size:35px;
+	text-align:center;
+}
+
+#Logo {
+	width:100%;
+	height:100%;
+	padding:10px;
+	max-width:800px;
+}
+
+#topbar {
+	text-align:center;
+	width:80%;height:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#listForm {
+	font-family:arfmoochikncheez;
+	margin-top: 20px;
+	max-width:800px;
+	width: 90%;
+	background-color: black;
+	color:white;
+	padding: 1px;
+	border: none;
+	border-radius: 30px 30px 0px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+}
+
+#serviceStat {
+	padding:20px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+}
+
+/* Left and right column */
+.column.services {
+	width: 70%;
+}
+
+/* Middle column */
+.column.contact {
+	width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.commentSection {
+	margin-left:15px;
+	margin-right:15px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-align:center;
+	background-image: linear-gradient(#6cf, rgba(0,0,255,0.5));
+	border: solid black 1px;
+	border-radius: 10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column.services, .column.contact {
+    width: 100%;
+  }
+  
+  .commentSection {
+  	margin-left: 15px;
+  	margin-right: 15px;
+  }
+  
+  #Logo {
+  	max-width: 500px;
+  	height: 200px;
+  }
+  
+  #topbar {
+  	height:200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+	#title {
+		font-size: 35px;
+	}
+	
+	#subtitle {
+		font-size:24px;
+	}
+	
+	#title2, #title1 {
+		text-align: center;
+	}
+}
+
+
+/*SERVICES*/
+.containerSS {
+	position: relative;
+	width: 90%;
+	max-width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 0px 0px 30px 30px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;/*#008CBA;*/
+    border-radius: 0px 0px 30px 30px;
+}
+
+.containerSS:hover .overlay {
+	opacity: 0.9;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+
+
+/*Slide Animation*/
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  width: 100%;
+  position: relative;
+  margin: auto;
+  height:80px;
+  background-color:black;
+}
+
+
+.mySlides {display: none;}
+
+.active {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
