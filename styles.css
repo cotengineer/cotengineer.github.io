@@ -51,7 +51,7 @@ html, body {
 }
 
 #body {
-   padding-bottom:500px;   /* Height of the footer */
+   padding-bottom:250px;   /* Height of the footer */
      background-image: url('images/sky.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -62,9 +62,11 @@ html, body {
    position:absolute;
    bottom:0;
    width:100%;
-   height:500px;   /* Height of the footer */
+   height:250px;   /* Height of the footer */
    background: black;
    border-top: solid black 2px;
+   color:white;
+   text-align:center;
 }
 
 @media (max-width: 800px) {
@@ -276,7 +278,52 @@ html, body {
 	text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+	.text {
+		font-size:18px;
+	}
+}
 
+
+
+#email {
+	border: solid white 1px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	background-color: #4CAF50;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#twitter {
+	border: solid white 1px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	background-color:rgb(29,161,242);/*#6CADDE;*/
+	cursor: pointer;
+	display: inline-block;
+}
+
+#phone {
+	border: solid white 1px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	background-color: #152d75;
+	cursor: pointer;
+	display: inline-block;
+}
 
 /*Slide Animation*/
 /* Slideshow container */
