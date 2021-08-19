@@ -55,7 +55,7 @@ html, body {
      background-image: url('images/sky.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100% contain;
 }
 
 #footer {
