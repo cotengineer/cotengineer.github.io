@@ -188,6 +188,7 @@ text-align: left;
     font-size: 24px;
     background-color: lightgray;
     border-radius: 5px;
+    color:black;
 }
 
 .proj button:hover {
@@ -196,7 +197,7 @@ text-align: left;
 }
 
 .proj a {
-    color: white;
+    color: black;
 }
 
 .examples {
