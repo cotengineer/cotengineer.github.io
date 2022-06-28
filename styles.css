@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Staatliches', cursive;
+}
+
+.logo img{
+    width: 100%;
+    max-width: 100px;  
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    text-align: right;
+    justify-content: right;
+    font-size: 30px;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px 15px; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+.hero-text {
+    position: absolute;
+    left:10%;
+    bottom: 25%;
+    font-size: 3vw;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-projects {
+    position: relative;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+.hero-text-projects {
+    position: absolute;
+    left:50%;
+    top: 75%;
+    font-size: 3vw;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.0);
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.hero-resources {
+    position: relative;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+.hero-text-resources {
+    position: absolute;
+    left:50%;
+    top:50%;
+    font-size: 3vw;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.0);
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.section {
+    width: 90%;
+    margin: 50px auto;
+    border: solid 1px black;
+}
+
+.section h1 {
+    color: white;
+    background-color: black;
+    padding: 5px 25px;
+    font-family: 'Staatliches', cursive;
+
+}
+
+.section p {
+    font-size:calc(12px + 0.5vw);
+    padding: 30px;
+}
+
+.servIm {
+    width: 100%;
+    
+}
+
+.servIm img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:5px;
+    max-width: 1000px;
+}
+
+.services {
+    padding: 50px 25px;
+}
+
+.services h2 {
+    text-decoration: underline;
+    font-family: 'Staatliches', cursive;
+    margin-top: 30px;
+}
+
+.services a {
+    text-decoration: none;
+    color: black;
+}
+
+.services a:hover {
+    border: solid 2px black;
+}
+
+.pricing{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    background-color: rgb(10, 58, 5);
+    padding: 1px 0px;
+    font-family: 'Staatliches', cursive;
+}
+.price {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 15px 10px;
+font-size: 20px;
+text-align: left;
+}
+
+.price h3, .price p{
+    text-align: center;
+    font-size: 35px;
+}
+
+.price mark{
+    background-color: rgb(224, 215, 84);
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.price ul {
+    padding: 20px;
+}
+
+.proj {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.proj button{
+    margin: 15px 0px;
+    padding: 15px 30px;
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.proj button:hover {
+    background-color: rgb(5, 5, 4);
+    color:white;
+}
+
+.examples {
+    display: grid;
+    grid-template-columns: 30% 80%;
+}
+
+.examples-sum {
+    padding: 15px;
+    width:90%;
+    text-align: center;
+}
+
+.examples-sum img{
+    width: 90%;
+    max-width: 350px;
+}
+
+/* .videos {
+
+} */
+
+.footer {
+    background-color: black;
+    min-height: 400px;
+}
+
+.author {
+    
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    padding: 20px;
+    color:white;
+}
+
+.founder { 
+    padding: 30px;
+    text-align: left;
+    color: white;
+    
+}
+
+.founder h3 { 
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.founder img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.founder a {
+    color: white;
+    text-decoration: underline;
+}
+
+.founder p {
+    padding: 10px;
+
+}
+
+.bottom {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-top: solid 1px white;
+}
+
+@media screen and (max-width: 600px){
+
+    .nav {
+        font-size: 18px;
+    }
+    .nav li {
+        padding: 10px 5px; 
+    }
+    .logo img{
+        width: 100%;
+        max-width: 50px;  
+    }
+    .services {
+        padding: 10px 25px;
+    }
+    .pricing {
+        grid-template-columns: auto;
+        margin-bottom: 10px;
+    }
+    .price h3, .price p {
+        font-size: 30px;
+    }
+    .author {
+        grid-template-columns: auto;
+    }
+    .founder img {
+        width: 70%;
+        border-radius: 20px;
+        margin: 0px 45px;
+    }
+    .examples {
+        grid-template-columns: auto;
+    }
+    .videos iframe{
+        width: 100%;
+        height: 275px;
+    }
+}
