@@ -195,6 +195,10 @@ text-align: left;
     color:white;
 }
 
+.proj a {
+    color: white;
+}
+
 .examples {
     display: grid;
     grid-template-columns: 30% 80%;
