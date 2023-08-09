@@ -62,7 +62,7 @@
             </div>
             <div class="founder">
                 <h3>About the Founder</h3>
-                <p>Hi, my name is Chris Thomas Ph.D., and I am the founder of Special-T-Support. I spent 8 years developing software for a wide range of areas like Telecommunications, Robotics, Control Systems, Websites, and Applications.
+                <p>Hi, my name is Chris Thomas Ph.D., and I am the founder of Special-T-Support. I spent 10 years developing software for a wide range of areas like Telecommunications, Robotics, Control Systems, Websites, and Applications.
                     My passion is helping people achieve their goals through my love of software design.</p>
             </div>
             <div class="founder">
@@ -77,7 +77,7 @@
         </div>
     </div>
     <div class="bottom">
-        <p>Copyright © 2020-2022 specialtsupport.com</p>
+        <p id="copyright">Copyright © 2020-2022 specialtsupport.com</p>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHK93760E"></script>
@@ -88,6 +88,11 @@
 
     gtag('config', 'G-KBHK93760E');
     </script> 
+
+    <script>
+        const d = new Date()
+        document.getElementById("copyright").innerHTML = "Copyright © 2020-" + d.getFullYear();
+    </script>
     
 </body>
 </html>
